@@ -8,6 +8,11 @@ page {
         templateRootPath = EXT:ucph_base_config/Resources/Private/Templates/Page/
     }
 
+    favicon {
+        # cat=UCPH TYPO3 base configuration: logo/111/100; type=string; label=Favicon
+        file = EXT:ucph_base_config/Resources/Public/Icons/favicon.ico
+    }
+
     meta {
         # cat=UCPH TYPO3 base configuration: meta data/120/100; type=string; label=viewport
         viewport = width=device-width, initial-scale=1, minimum-scale=1
@@ -19,6 +24,13 @@ page {
         compatible = IE=edge
         # cat=UCPH TYPO3 base configuration: meta data/120/150; type=string; label=google-site-verification
         google-site-verification =
+    }
+    
+    bootstrap {
+        # cat=UCPH TYPO3 base configuration: assets/130/100; type=string; label=Bootstrap CSS
+        css = EXT:ucph_base_config/Resources/Public/bootstrap-5.3.0/dist/css/bootstrap.min.css
+        # cat=UCPH TYPO3 base configuration: assets/130/110; type=string; label=Bootstrap js
+        js = EXT:ucph_base_config/Resources/Public/bootstrap-5.3.0/dist/js/bootstrap.bundle.min.js
     }
 }
 

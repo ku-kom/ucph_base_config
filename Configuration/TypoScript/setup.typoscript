@@ -7,6 +7,19 @@
 
 page = PAGE
 page {
+    typeNum = 0
+    shortcutIcon = {$page.favicon.file}
+
+    bodyTagCObject = COA
+    bodyTagCObject {
+        10 = TEXT
+        10.data = TSFE:id
+        10.noTrimWrap = | id="p|"|
+        20 =< lib.page.class
+        20.stdWrap.noTrimWrap = | class="|"|
+        wrap = <body|>
+    }
+    
     10 = FLUIDTEMPLATE
     10 {
         templateName = TEXT
@@ -37,6 +50,23 @@ page {
             0 = EXT:ucph_base_config/Resources/Private/Layouts/Page/
             1 = {$page.fluidtemplate.layoutRootPath}
         }
+        variables {
+            pageTitle = TEXT
+            pageTitle.data = page:title
+            siteTitle = TEXT
+            siteTitle.data = siteLanguage:websiteTitle//site:websiteTitle//site:identifier
+            rootPage = TEXT
+            rootPage.data = leveluid:0
+            pagelayout = TEXT
+            pagelayout {
+                data = pagelayout
+                replacement.10 {
+                    search = pagets__
+                    replace =
+                }
+                ifEmpty = default
+            }
+        }
     }
 
      meta {
@@ -50,8 +80,15 @@ page {
         }
 
         # Google
-        google = {$page.meta.google}
         google-site-verification = {$page.meta.google-site-verification}
+    }
+
+    includeCSS {
+        bootstrap_css = {$page.bootstrap.css}
+    }
+
+    includeJSFooterlibs {
+        bootstrap_js = {$page.bootstrap.js}
     }
 }
 
