@@ -1,0 +1,7 @@
+# HELPER
+@import 'EXT:ucph_base_config/Configuration/TypoScript/ContentElement/Helper/ContentElement.typoscript'
+@import 'EXT:ucph_base_config/Configuration/TypoScript/ContentElement/Helper/DynamicContent.typoscript'
+
+# CONTENT ELEMENT RENDERING
+# Manual inclusion to keep control over loading order
+@import 'EXT:ucph_base_config/Configuration/TypoScript/ContentElement/Element/Text.typoscript'

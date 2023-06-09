@@ -1,5 +1,5 @@
 # DEPENDENCIES
-@import 'EXT:ucph_base_config/Configuration/TypoScript/Helper/DynamicContent.typoscript'
+@import 'EXT:ucph_base_config/Configuration/TypoScript/ContentElement/setup.typoscript'
 
 ##############
 #### PAGE ####

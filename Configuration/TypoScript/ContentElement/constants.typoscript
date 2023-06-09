@@ -1,0 +1,11 @@
+# CONTENT ELEMENTS
+ucph_base_config_contentelements {
+    view {
+        # cat=UCPH TYPO3 base configuration: content elements/100_contentelement/001_layoutRootPath; type=string; label=Layout Root Path: Path to layouts
+        layoutRootPath = EXT:ucph_base_config/Resources/Private/Layouts/ContentElements/
+        # cat=UCPH TYPO3 base configuration: content elements/100_contentelement/002_partialRootPath; type=string; label=Partial Root Path: Path to partials
+        partialRootPath = EXT:ucph_base_config/Resources/Private/Partials/ContentElements/
+        # cat=UCPH TYPO3 base configuration: content elements/100_contentelement/003_templateRootPath; type=string; label=Template Root Path: Path to templates
+        templateRootPath = EXT:ucph_base_config/Resources/Private/Templates/ContentElements/
+    }
+}
