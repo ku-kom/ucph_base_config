@@ -16,18 +16,6 @@ lib.contentElement {
         10 = {$ucph_base_config_contentelements.view.layoutRootPath}
     }
 
-    dataProcessing {
-        1509614342 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        1509614342 {
-            references.fieldName = background_image
-            as = backgroundImage
-        }
-        1532626753 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
-        1532626753 {
-            fieldName = background_image_options
-        }
-    }
-
     variables {
         backendlayout = TEXT
         backendlayout {
