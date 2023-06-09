@@ -1,0 +1,24 @@
+{
+    "name": "university-of-copenhagen/ucph_base_config",
+    "type": "typo3-cms-extension",
+    "description": "UCPH base TYPO3 configuration and layouts",
+    "authors": [{
+        "name": "Nanna Ellegaard",
+        "role": "Developer"
+    }],
+    "homepage": "https://www.ku.dk/",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "UniversityOfCopenhagen\\UcphBaseConfig\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "ucph_base_config"
+        }
+    }
+}

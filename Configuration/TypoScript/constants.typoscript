@@ -1,0 +1,48 @@
+page {
+    fluidtemplate {
+        # cat=UCPH TYPO3 base configuration: templates/100/100; type=string; label=Layout Root Path: Path to layouts
+        layoutRootPath = EXT:ucph_base_config/Resources/Private/Layouts/Page/
+        # cat=UCPH TYPO3 base configuration: templates/100/110; type=string; label=Partial Root Path: Path to partials
+        partialRootPath = EXT:ucph_base_config/Resources/Private/Partials/Page/
+        # cat=UCPH TYPO3 base configuration: templates/100/120; type=string; label=Template Root Path: Path to templates
+        templateRootPath = EXT:ucph_base_config/Resources/Private/Templates/Page/
+    }
+
+    meta {
+        # cat=UCPH TYPO3 base configuration: meta data/120/100; type=string; label=viewport
+        viewport = width=device-width, initial-scale=1, minimum-scale=1
+        # cat=UCPH TYPO3 base configuration: meta data/120/110; type=string; label=robots
+        robots = index,follow
+        # cat=UCPH TYPO3 base configuration: meta data/120/120; type=string; label=apple-mobile-web-app-capable
+        apple-mobile-web-app-capable = no
+        # cat=UCPH TYPO3 base configuration: meta data/120/130; type=string; label=compatible
+        compatible = IE=edge
+        # cat=UCPH TYPO3 base configuration: meta data/120/140; type=string; label=google
+        google = notranslate
+        # cat=UCPH TYPO3 base configuration: meta data/120/150; type=string; label=google-site-verification
+        google-site-verification =
+    }
+}
+
+config {
+    # cat=UCPH TYPO3 base configuration: config/150/110; type=boolean; label=No Cache
+    no_cache = 0
+    # cat=UCPH TYPO3 base configuration: config/150/120; type=options[Do not remove=0,Remove=1,Move to external file=external]; label=Remove default JavaScript
+    removeDefaultJS = 0
+    # cat=UCPH TYPO3 base configuration: config/150/130; type=boolean; label=Compress JavaScript
+    compressJs = 1
+    # cat=UCPH TYPO3 base configuration: config/150/140; type=boolean; label=Compress CSS
+    compressCss = 1
+    # cat=UCPH TYPO3 base configuration: config/150/150; type=boolean; label=Concatenate JavaScript
+    concatenateJs = 1
+    # cat=UCPH TYPO3 base configuration: config/150/160; type=boolean; label=Concatenate CSS
+    concatenateCss = 1
+    # cat=UCPH TYPO3 base configuration: config/150/170; type=boolean; label=Admin Panel
+    admPanel = 1
+    # cat=UCPH TYPO3 base configuration: config/150/180; type=options[None=,All=all,Cached=cached,Output=output]; label=Prefix local Anchors: See [http://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Config/Index.html#prefixlocalanchors] for explanation.
+    prefixLocalAnchors = all
+    # cat=UCPH TYPO3 base configuration: config/150/190; type=string; label=Header Comment
+    headerComment = 
+    # cat=UCPH TYPO3 base configuration: config/150/210; type=boolean; label=Send cache headers: Allow appropriate caching by transparent proxies and browser clients
+    sendCacheHeaders = 1
+}

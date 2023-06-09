@@ -1,0 +1,81 @@
+##############
+#### PAGE ####
+##############
+
+page = PAGE
+page {
+    10 = FLUIDTEMPLATE
+    10 {
+        templateName = TEXT
+        templateName {
+            cObject = TEXT
+            cObject {
+                data = pagelayout
+                required = 1
+                case = uppercamelcase
+                split {
+                    token = pagets__
+                    cObjNum = 1
+                    1.current = 1
+                }
+            }
+            ifEmpty = Default
+        }
+
+        templateRootPaths {
+            0 = EXT:ucph_base_config/Resources/Private/Templates/Page/
+            1 = {$page.fluidtemplate.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:ucph_base_config/Resources/Private/Partials/Page/
+            1 = {$page.fluidtemplate.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:ucph_base_config/Resources/Private/Layouts/Page/
+            1 = {$page.fluidtemplate.layoutRootPath}
+        }
+    }
+
+     meta {
+        viewport = {$page.meta.viewport}
+        robots = {$page.meta.robots}
+        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
+
+        X-UA-Compatible = {$page.meta.compatible}
+        X-UA-Compatible {
+            attribute = http-equiv
+        }
+
+        # Google
+        google = {$page.meta.google}
+        google-site-verification = {$page.meta.google-site-verification}
+    }
+}
+
+config {
+    absRefPrefix = auto
+    no_cache = {$config.no_cache}
+    pageTitleFirst = 1
+    pageTitleSeparator = -
+    pageTitleSeparator.noTrimWrap = | | |
+    linkVars = L(int)
+    doctype = html5
+    removeDefaultJS = {$config.removeDefaultJS}
+    admPanel = {$config.admPanel}
+    //debug = 0
+    sendCacheHeaders = {$config.sendCacheHeaders}
+    index_enable = 1
+    index_externals = 1
+    index_metatags = 1
+    headerComment = {$config.headerComment}
+
+    // Language Settings
+    # sys_language_overlay = 1
+    # sys_language_mode = content_fallback
+
+    // Compression and Concatenation of CSS and JS Files
+    compressJs = {$config.compressJs}
+    compressCss = {$config.compressCss}
+    concatenateJs = {$config.concatenateJs}
+    concatenateCss = {$config.concatenateCss}
+}
