@@ -30,15 +30,19 @@ config {
     # cat=UCPH TYPO3 base configuration: config/150/120; type=options[Do not remove=0,Remove=1,Move to external file=external]; label=Remove default JavaScript
     removeDefaultJS = 0
     # cat=UCPH TYPO3 base configuration: config/150/130; type=boolean; label=Compress JavaScript
-    compressJs = 1
+    compressJs = 0
     # cat=UCPH TYPO3 base configuration: config/150/140; type=boolean; label=Compress CSS
-    compressCss = 1
+    compressCss = 0
     # cat=UCPH TYPO3 base configuration: config/150/150; type=boolean; label=Concatenate JavaScript
-    concatenateJs = 1
+    concatenateJs = 0
     # cat=UCPH TYPO3 base configuration: config/150/160; type=boolean; label=Concatenate CSS
-    concatenateCss = 1
+    concatenateCss = 0
     # cat=UCPH TYPO3 base configuration: config/150/170; type=boolean; label=Admin Panel
     admPanel = 1
+    # cat=UCPH TYPO3 base configuration: config/150/175; type=int; label=Spam protect e-mail addresses
+    spamProtectEmailAddresses = 2
+    # cat=UCPH TYPO3 base configuration: config/150/176; type=string; label=Spam protecion - where to obfuscate
+    spamProtectEmailAddresses_atSubst = (at)
     # cat=UCPH TYPO3 base configuration: config/150/180; type=options[None=,All=all,Cached=cached,Output=output]; label=Prefix local Anchors: See [http://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Config/Index.html#prefixlocalanchors] for explanation.
     prefixLocalAnchors = all
     # cat=UCPH TYPO3 base configuration: config/150/190; type=string; label=Header Comment

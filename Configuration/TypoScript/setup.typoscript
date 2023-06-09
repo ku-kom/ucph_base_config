@@ -1,3 +1,6 @@
+# DEPENDENCIES
+@import 'EXT:ucph_base_config/Configuration/TypoScript/Helper/DynamicContent.typoscript'
+
 ##############
 #### PAGE ####
 ##############
@@ -78,4 +81,6 @@ config {
     compressCss = {$config.compressCss}
     concatenateJs = {$config.concatenateJs}
     concatenateCss = {$config.concatenateCss}
+    spamProtectEmailAddresses = {$config.spamProtectEmailAddresses}
+    spamProtectEmailAddresses_atSubst = {$config.spamProtectEmailAddresses_atSubst}
 }
