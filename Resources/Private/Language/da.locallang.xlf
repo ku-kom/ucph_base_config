@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="EXT:ucph_base_config/Resources/Private/Language/locallang.xlf" date="2022-06-14T10:27:00Z" product-name="ucph_base_config">
+    <file source-language="en" target-language="da" datatype="plaintext" original="EXT:ucph_base_config/Resources/Private/Language/locallang.xlf" date="2022-06-14T10:27:00Z" product-name="ucph_base_config">
         <header>
             <authorName>Nanna Ellegaard</authorName>
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
         <trans-unit id="page.skiplinks.page-content">
-            <source>Skip to main content</source>
+            <source>Spring til hovedindhold</source>
         </trans-unit>
         <trans-unit id="page.skiplinks.page-footer">
-            <source>Skip to footer</source>
+            <source>Spring til footer footer</source>
         </trans-unit>
         <trans-unit id="page.scrolltotop">
-            <source>Scroll to top (use Enter key)</source>
+            <source>Til toppen (tast Enter)</source>
         </trans-unit>
         </body>
     </file>
