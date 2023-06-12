@@ -2,27 +2,24 @@
 <f:layout name="Default" />
 <f:section name="Main">
     <div class="section section-default">
-        <main class="main-content">
-            <f:if condition="{pageTitle}">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h1 class="page-title">{pageTitle}</h1>
-                        </div>
-                    </div>
-                </div>
-            </f:if>
+        <f:if condition="{pageTitle}">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '20'}" />
+                        <h1 class="page-title">{pageTitle}</h1>
                     </div>
                 </div>
             </div>
-        </main>
+        </f:if>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '20'}" />
+                </div>
+            </div>
+        </div>
     </div>
 </f:section>
-<f:section name="Footer">
-</f:section>
+
 
 </html>
