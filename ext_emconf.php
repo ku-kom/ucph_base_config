@@ -5,7 +5,7 @@
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'UCPH TYPO3 base configuration',
-    'description' => 'General configuration and layouts',
+    'description' => 'General TYPO3 configuration and layouts',
     'category' => 'templates',
     'constraints' => [
         'depends' => [
