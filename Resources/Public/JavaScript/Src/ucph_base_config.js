@@ -4,6 +4,8 @@
  * University of Copenhagen, FA Communications, Nanna Ellegaard.
  * ========================================================================*/
 
+//import { Footer } from './ucph_global_footer.js';
+
 /**
  * Check OS reduced motion setting
  */
@@ -37,6 +39,14 @@ const debounce = (func, wait, immediate) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
+
+    const footerHeading = document.querySelectorAll('.footer-section-content .footer-col-header');
+    /**
+     * Assign class to footer headings.
+     */
+    footerHeading.forEach((column) => {
+        const footerEl = new Footer(column);
+    });
 
 });
 
