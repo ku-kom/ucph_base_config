@@ -31,6 +31,8 @@ page {
         css = EXT:ucph_base_config/Resources/Public/bootstrap-5.3.0/dist/css/bootstrap.min.css
         # cat=UCPH TYPO3 base configuration: assets/130/110; type=string; label=Bootstrap js
         js = EXT:ucph_base_config/Resources/Public/bootstrap-5.3.0/dist/js/bootstrap.bundle.min.js
+        # cat=UCPH TYPO3 base configuration: assets/130/115; type=string; label=UCPH global js
+        ucph = EXT:ucph_base_config/Resources/Public/JavaScript/Dist/ucph_base_config.min.js
     }
 }
 

@@ -6,6 +6,9 @@
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
+        <trans-unit id="page.skiplinks.label">
+            <source>List of links to sections</source>
+        </trans-unit>
         <trans-unit id="page.skiplinks.page-content">
             <source>Skip to main content</source>
         </trans-unit>

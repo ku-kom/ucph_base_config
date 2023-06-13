@@ -37,32 +37,45 @@ const debounce = (func, wait, immediate) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
-    /**
-     * Show/hide "scroll to top" if it exists
-     */
-    const scrollToTopIcon = () => {
-        const scroll = document.getElementById('scrollToTop');
-        // multiple checks for browser compatibility:
-        let scollPosition = window.pageYOffset || document.documentElement.scrollTop;
-        if (scroll) {
-            scroll.classList.toggle('show', scollPosition > 60);
-        }
-    }
-    scrollToTopIcon();
-
-    // Listen to "scroll to top" on scroll
-    window.addEventListener('scroll', () => {
-        scrollToTopIcon();
-    }, {
-        passive: true
-    });
 
 });
 
 
-
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
+
+    /**
+     * Animate page header
+     */
+    const animatePageHeader = () => {
+        const pageHeader = document.getElementById('page-header');
+        // multiple checks for browser compatibility:
+        let scollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        if (pageHeader) {
+            pageHeader.classList.toggle('is-small', scollPosition > 100);
+        }
+    }
+    animatePageHeader();
+
+    /**
+     * Show/hide "scroll to top" if it exists
+     */
+    const scrollToTopIcon = () => {
+        const scrollToTop = document.getElementById('scrollToTop');
+        // multiple checks for browser compatibility:
+        let scollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollToTop) {
+            scrollToTop.classList.toggle('show', scollPosition > 60);
+        }
+    }
+    scrollToTopIcon();
+
+    /**
+     * Remove focus from "scroll to top" element when clicked
+     */
+    document.getElementById('scrollToTop').addEventListener('click', (event) => {
+        event.currentTarget.blur();
+    });
 
     /**
      * Link to open accordion
@@ -98,16 +111,27 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-
     // slideToOpenAccordion();
 
-    // window.addEventListener('orientationchange', debounce(function () {
-    //     slideToOpenAccordion();
-    // }, 150));
+    // Listen to "scroll to top" on scroll
+    window.addEventListener('scroll', () => {
+        animatePageHeader();
+        scrollToTopIcon();
+    }, {
+        passive: true
+    });
 
-    // window.addEventListener('resize', debounce(function () {
-    //     slideToOpenAccordion();
-    // }, 150));
+
+
+    window.addEventListener('orientationchange', debounce(function () {
+        animatePageHeader();
+        //slideToOpenAccordion();
+    }, 150));
+
+    window.addEventListener('resize', debounce(function () {
+        animatePageHeader();
+        //slideToOpenAccordion();
+    }, 150));
 
 
 });

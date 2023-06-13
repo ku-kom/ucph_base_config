@@ -6,6 +6,9 @@
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
+        <trans-unit id="page.skiplinks.label">
+            <source>Genveje til hovedområder</source>
+        </trans-unit>
         <trans-unit id="page.skiplinks.page-content">
             <source>Spring til hovedindhold</source>
         </trans-unit>
