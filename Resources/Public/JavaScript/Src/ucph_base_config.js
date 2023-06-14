@@ -129,9 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const footerEl = new Footer(column);
         });
     }
-
 });
-
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -141,7 +139,6 @@ window.addEventListener('DOMContentLoaded', () => {
      */
     const animatePageHeader = () => {
         const pageHeader = document.getElementById('page-header');
-        // multiple checks for browser compatibility:
         let scollPosition = window.pageYOffset || document.documentElement.scrollTop;
         if (pageHeader) {
             pageHeader.classList.toggle('is-small', scollPosition > 100);
@@ -154,7 +151,6 @@ window.addEventListener('DOMContentLoaded', () => {
      */
     const scrollToTopIcon = () => {
         const scrollToTop = document.getElementById('scrollToTop');
-        // multiple checks for browser compatibility:
         let scollPosition = window.pageYOffset || document.documentElement.scrollTop;
         if (scrollToTop) {
             scrollToTop.classList.toggle('show', scollPosition > 60);
