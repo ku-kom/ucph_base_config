@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+    <f:debug>{_all}</f:debug>
+    <div class="ctype_{data.CType}-above">
+        <div class="textpic-text">
+            <f:if condition="{data.header}">
+                <h2>
+                    <f:format.html>{data.header}</f:format.html>
+                </h2>
+            </f:if>
+            <f:format.html>{data.bodytext}</f:format.html>
+        </div>
+        <f:if condition="{images}">
+            <f:then>
+                <div class="textpic-img">
+                    <f:for each="{images}" as="image">
+                        <f:image image="{image.originalFile}" />
+                    </f:for>
+                </div>
+            </f:then>
+        </f:if>
+</f:section>
+
+</html>
