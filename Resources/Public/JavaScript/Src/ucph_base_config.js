@@ -4,8 +4,6 @@
  * University of Copenhagen, FA Communications, Nanna Ellegaard.
  * ========================================================================*/
 
-//import { Footer } from './ucph_global_footer.js';
-
 /**
  * Check OS reduced motion setting
  */
@@ -40,13 +38,97 @@ const debounce = (func, wait, immediate) => {
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
-    const footerHeading = document.querySelectorAll('.footer-section-content .footer-col-header');
+    const footerHeading = document.querySelectorAll('.footer-section .footer-col-header');
+    class Footer {
+        constructor(footer) {
+            this.footer = footer;
+            this.list = this.footer.nextElementSibling;
+            this.setAriaAttr();
+            this.addEventListeners();
+        }
+
+        /**
+         * Detect screen size.
+         * @returns boolean.
+         */
+        isMobile() {
+            return window.matchMedia('(max-width: 991px)').matches;
+        }
+
+        /**
+         * Set aria-expanded attribute.
+         */
+        setAriaAttr() {
+            this.footer.setAttribute('aria-expanded', this.isMobile() ? 'false' : 'true');
+        }
+
+        /**
+         * Clear styles from footer.
+         */
+        resetFooter() {
+            this.list.style.removeProperty('height');
+            this.list.classList.remove('active');
+        }
+
+        /**
+         * Slide footer columns open or closed.
+         */
+        toggleFooter() {
+            if (!this.list.classList.contains('active')) {
+                /**
+                 * Slide down
+                 */
+                this.list.classList.add('active');
+                this.list.style.height = 'auto';
+
+                let height = this.list.clientHeight + 'px';
+                this.list.style.height = '0';
+                setTimeout(() => {
+                    this.list.style.height = height;
+                }, 0);
+                this.footer.setAttribute('aria-expanded', 'true');
+            } else {
+                /**
+                 * Slide up
+                 */
+                this.list.style.height = '0';
+                this.footer.setAttribute('aria-expanded', 'false');
+
+                /**
+                 * Remove the `active` class when the animation ends
+                 */
+                this.list.addEventListener('transitionend', () => {
+                    this.list.classList.remove('active');
+                }, {
+                    once: true
+                });
+            }
+        }
+
+        addEventListeners() {
+            this.footer.addEventListener('click', () => {
+                this.toggleFooter();
+            });
+
+            window.addEventListener('resize', debounce(() => {
+                this.resetFooter();
+                this.setAriaAttr();
+            }, 150));
+
+            window.addEventListener('orientationchange', debounce(() => {
+                this.resetFooter();
+                this.setAriaAttr();
+            }, 150));
+        }
+    }
     /**
      * Assign class to footer headings.
      */
-    footerHeading.forEach((column) => {
-        const footerEl = new Footer(column);
-    });
+    if (footerHeading) {
+        footerHeading.forEach((column) => {
+            const footerEl = new Footer(column);
+        });
+    }
 
 });
 

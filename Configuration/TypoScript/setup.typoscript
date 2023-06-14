@@ -92,7 +92,6 @@ page {
     includeJSFooterlibs {
         bootstrap_js = {$page.bootstrap.js}
         ucph_global_js = {$page.bootstrap.ucph}
-        ucph_global_js.type = module
     }
 }
 
