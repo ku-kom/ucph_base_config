@@ -13,3 +13,6 @@ if ($versionInformation->getMajorVersion() < 12) {
       @import "EXT:ucph_base_config/Configuration/page.tsconfig"
    ');
 }
+
+// Register "ucph" as global fluid namespace
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['ucph'] = ['UniversityOfCopenhagen\\UcphBaseConfig\\ViewHelpers'];
