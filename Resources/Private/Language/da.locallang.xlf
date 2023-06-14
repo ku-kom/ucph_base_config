@@ -18,6 +18,15 @@
         <trans-unit id="page.scrolltotop">
             <source>Til toppen (tast Enter)</source>
         </trans-unit>
+        <trans-unit id="page.search-label">
+            <source>Inputfelt til søgeord</source>
+        </trans-unit>
+        <trans-unit id="page.search">
+            <source>Søg...</source>
+        </trans-unit>
+        <trans-unit id="page.search-btn">
+            <source>Søgeknap</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>
