@@ -11,7 +11,7 @@
         <f:if condition="{images}">
             <f:then>
                 <f:for each="{images}" as="image">
-                    <f:image image="{image.originalFile}" />
+                    <f:image src="{f:uri.image(image: image)}" alt="{image.alternative}" title="{image.title}" />
                 </f:for>
             </f:then>
         </f:if>
