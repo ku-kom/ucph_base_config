@@ -5,7 +5,7 @@
         <div class="textpic-text">
             <f:if condition="{data.header}">
                 <h2>
-                    <f:format.html>{data.header}</f:format.html>
+                    <f:format.htmlspecialchars doubleEncode="false">{data.header}</f:format.htmlspecialchars>
                 </h2>
             </f:if>
             <f:format.html>{data.bodytext}</f:format.html>

@@ -5,7 +5,7 @@
     <div class="ctype_{data.CType}">
         <f:if condition="{data.header}">
             <h2>
-                <f:format.html>{data.header}</f:format.html>
+                <f:format.htmlspecialchars doubleEncode="false">{data.header}</f:format.htmlspecialchars>
             </h2>
         </f:if>
         <f:if condition="{images}">
