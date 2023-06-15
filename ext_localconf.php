@@ -19,7 +19,7 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['ucph'] = ['University
 
 // Login screen and backend branding
 $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
-    'backendFavicon' => '',
+    'backendFavicon' => 'EXT:ucph_base_config/Resources/Public/Icons/favicon.ico',
     'backendLogo' => 'EXT:ucph_base_config/Resources/Public/Css/Backend/Branding/ku.svg',
     'loginBackgroundImage' => 'EXT:ucph_base_config/Resources/Public/Css/Backend/Branding/ku-login-background.jpg',
     'loginLogo' => 'EXT:ucph_base_config/Resources/Public/Css/Backend/Branding/ku-login.png',
