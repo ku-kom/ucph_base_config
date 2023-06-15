@@ -35,6 +35,14 @@ const debounce = (func, wait, immediate) => {
     };
 }
 
+/**
+ * Detect screen size.
+ * @returns boolean.
+ */
+const isMobile = () => {
+    return window.matchMedia('(max-width: 991px)').matches;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
@@ -43,29 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
         constructor(footer) {
             this.footer = footer;
             this.list = this.footer.nextElementSibling;
-            this.setAriaAttr();
+            this.setAttr();
             this.addEventListeners();
         }
 
         /**
-         * Detect screen size.
-         * @returns boolean.
+         * Set aria-expanded attribute and remove styles.
          */
-        isMobile() {
-            return window.matchMedia('(max-width: 991px)').matches;
-        }
-
-        /**
-         * Set aria-expanded attribute.
-         */
-        setAriaAttr() {
-            this.footer.setAttribute('aria-expanded', this.isMobile() ? 'false' : 'true');
-        }
-
-        /**
-         * Clear styles from footer.
-         */
-        resetFooter() {
+        setAttr() {
+            this.footer.setAttribute('aria-expanded', isMobile() ? 'false' : 'true');
             this.list.style.removeProperty('height');
             this.list.classList.remove('active');
         }
@@ -111,13 +105,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             window.addEventListener('resize', debounce(() => {
-                this.resetFooter();
-                this.setAriaAttr();
+                this.setAttr();
             }, 150));
 
             window.addEventListener('orientationchange', debounce(() => {
-                this.resetFooter();
-                this.setAriaAttr();
+                this.setAttr();
             }, 150));
         }
     }
@@ -201,15 +193,15 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     // slideToOpenAccordion();
 
-    // Listen to "scroll to top" on scroll
+    /**
+     * Event listeners
+     */
     window.addEventListener('scroll', () => {
         animatePageHeader();
         scrollToTopIcon();
     }, {
         passive: true
     });
-
-
 
     window.addEventListener('orientationchange', debounce(function () {
         animatePageHeader();
