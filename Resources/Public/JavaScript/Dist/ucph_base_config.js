@@ -1,4 +1,4 @@
-export class Footer {
+class Footer {
     constructor(footer) {
         this.footer = footer;
         this.list = this.footer.nextElementSibling;
@@ -63,8 +63,7 @@ export class Footer {
             this.setAttr();
         }, 150));
     }
-}
-export default Footer;/* eslint-disable no-redeclare */
+}/* eslint-disable no-redeclare */
 /* ========================================================================
  * Copyright 2022
  * University of Copenhagen, FA Communications, Nanna Ellegaard.

@@ -1,4 +1,4 @@
-export class Footer {
+class Footer {
     constructor(footer) {
         this.footer = footer;
         this.list = this.footer.nextElementSibling;
@@ -64,4 +64,3 @@ export class Footer {
         }, 150));
     }
 }
-export default Footer;

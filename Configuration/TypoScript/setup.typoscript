@@ -68,6 +68,9 @@ page {
                 }
                 ifEmpty = default
             }
+            # Color theme
+            ucph_color_theme = TEXT
+            ucph_color_theme.data = site:ucph_color_theme
         }
     }
 
