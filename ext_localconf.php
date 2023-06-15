@@ -16,3 +16,13 @@ if ($versionInformation->getMajorVersion() < 12) {
 
 // Register "ucph" as global fluid namespace
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['ucph'] = ['UniversityOfCopenhagen\\UcphBaseConfig\\ViewHelpers'];
+
+// Login screen and backend branding
+$GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
+    'backendFavicon' => '',
+    'backendLogo' => 'EXT:ucph_base_config/Resources/Public/Css/Backend/Branding/ku.svg',
+    'loginBackgroundImage' => 'EXT:ucph_base_config/Resources/Public/Css/Backend/Branding/ku-login-background.jpg',
+    'loginLogo' => 'EXT:ucph_base_config/Resources/Public/Css/Backend/Branding/ku-login.png',
+    'loginHighlightColor' => '#901a1e',
+    'loginFootnote' => 'University of Copenhagen CMS'
+];
