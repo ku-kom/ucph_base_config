@@ -1,9 +1,10 @@
 // Import needed Bootstrap Files
+// DO NOT change the order of the imports
 @import "../../../../node_modules/bootstrap/scss/functions";
 @import "../../../../node_modules/bootstrap/scss/variables";
 @import "../../../../node_modules/bootstrap/scss/variables-dark";
 
-// Custom variables
+// Custom UCPH variables
 @import "variables";
 
 // Configuration
@@ -49,3 +50,7 @@
 
 // Utilities API
 @import "../../../../node_modules/bootstrap/scss/utilities/api";
+
+// Custom UCPH styles
+@import "custom/ucph-head";
+@import "custom/ucph-footer";
