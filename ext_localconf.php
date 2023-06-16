@@ -23,6 +23,7 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
     'backendLogo' => 'EXT:ucph_base_config/Resources/Public/Css/Backend/Branding/ku.svg',
     'loginBackgroundImage' => 'EXT:ucph_base_config/Resources/Public/Css/Backend/Branding/ku-login-background.jpg',
     'loginLogo' => 'EXT:ucph_base_config/Resources/Public/Css/Backend/Branding/ku-login.png',
+    'loginLogoAlt' => 'UCPH logo',
     'loginHighlightColor' => '#901a1e',
     'loginFootnote' => 'University of Copenhagen CMS'
 ];
