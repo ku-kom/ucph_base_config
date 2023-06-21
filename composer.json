@@ -10,6 +10,7 @@
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "require": {
+        "university-of-copenhagen/ucph-assets": "*"
     },
     "autoload": {
         "psr-4": {
