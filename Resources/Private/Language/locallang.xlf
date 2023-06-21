@@ -27,8 +27,14 @@
         <trans-unit id="page.search-btn">
             <source>Search button</source>
         </trans-unit>
+        <trans-unit id="page.search-dismiss">
+            <source>Close the search bar</source>
+        </trans-unit>
         <trans-unit id="page.global-menu">
             <source>Global menu</source>
+        </trans-unit>
+        <trans-unit id="page.search-dismiss">
+            <source>Close the search bar</source>
         </trans-unit>
         </body>
     </file>

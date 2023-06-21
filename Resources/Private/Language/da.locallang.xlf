@@ -24,6 +24,9 @@
         <trans-unit id="page.search">
             <source>Søg...</source>
         </trans-unit>
+        <trans-unit id="page.search-dismiss">
+            <source>Luk søgefelt</source>
+        </trans-unit>
         <trans-unit id="page.search-btn">
             <source>Søgeknap</source>
         </trans-unit>
