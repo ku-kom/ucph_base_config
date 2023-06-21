@@ -8,6 +8,11 @@ page {
         templateRootPath = EXT:ucph_base_config/Resources/Private/Templates/Page/
     }
 
+    emergencyBanner {
+        # cat=UCPH TYPO3 base configuration: Emergency/100/130; type=string; label=Emergency banner text
+        message =
+    }
+
     favicon {
         # cat=UCPH TYPO3 base configuration: logo/111/100; type=string; label=Favicon
         file = EXT:ucph_base_config/Resources/Public/Icons/favicon.ico

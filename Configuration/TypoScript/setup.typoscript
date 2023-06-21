@@ -2,6 +2,7 @@
 @import 'EXT:ucph_base_config/Configuration/TypoScript/ContentElement/setup.typoscript'
 # HELPER
 @import 'EXT:ucph_base_config/Configuration/TypoScript/Helper/PageClass.typoscript'
+@import 'EXT:ucph_base_config/Configuration/TypoScript/Helper/EmergencyBanner.typoscript'
 
 ##############
 #### PAGE ####
@@ -94,6 +95,7 @@ page {
 
     includeJSFooterlibs {
         bootstrap_js = {$page.bootstrap.js}
+        bootstrap_js.type = module
         ucph_global_js = {$page.bootstrap.ucph}
     }
 }

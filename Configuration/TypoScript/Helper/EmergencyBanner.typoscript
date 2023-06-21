@@ -1,0 +1,11 @@
+# Render emergency banner
+lib.emergencyBanner = COA
+lib.emergencyBanner {
+    10 {
+        if {
+            isTrue = {$page.emergencyBanner.message}
+        }
+        10 = TEXT
+        10.value = {$page.emergencyBanner.message}
+    }
+}

@@ -2,14 +2,10 @@
 <f:spaceless>
     <f:render partial="Navigation/SkipLinks" arguments="{_all}" />
     <header id="page-header" class="top-section">
-        <div class="container">
-            <div class="row">
-                <div class="col"><f:render partial="Navigation/SiteLogo" arguments="{_all}" /></div>
-                <div class="col">
-                    <f:render partial="Search/Searchbar" arguments="{_all}" />
-                </div>
-            </div>
-        </div>
+    <f:comment>
+        <f:render partial="Emergency/EmergencyBanner" arguments="{_all}" />
+    </f:comment>
+    <f:render partial="Navigation/Head" arguments="{_all}" />
     </header>
     <main id="page-content" class="main-section">
         <div class="container-fluid">
