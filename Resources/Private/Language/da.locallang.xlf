@@ -27,6 +27,9 @@
         <trans-unit id="page.search-btn">
             <source>Søgeknap</source>
         </trans-unit>
+        <trans-unit id="page.global-menu">
+            <source>Global navigation</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

@@ -1,15 +1,28 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<div class="top-navigation">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <f:render partial="Navigation/SiteLogo" arguments="{_all}" />
-            </div>
-            <div class="col">
-                <f:render partial="Search/Searchbar" arguments="{_all}" />
+<div class="header-navigation">
+    <div class="container-fluid global-topbar" id="global-topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <f:render partial="Navigation/SiteLogo" arguments="{_all}" />
+                </div>
+                <div class="col">
+                    <f:render partial="Search/Searchbar" arguments="{_all}" />
+                </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid global-menu" id="global-menu">
+        <div class="global-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <f:render partial="Navigation/MainNavigation" arguments="{_all}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 </html>
