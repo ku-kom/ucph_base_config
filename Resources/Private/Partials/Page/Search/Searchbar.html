@@ -1,9 +1,13 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<form>
-    <div class="input-group">
-        <input id="headerSearch" class="form-control" type="search" placeholder="{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xlf:page.search')}" aria-label="{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xlf:page.search-label')}" autocomplete="off">
-        <button class="btn btn-outline-secondary" type="submit" id="headerSearchBtn" aria-label="{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xlf:page.search-btn')}"><span class="bi bi-search" aria-hidden="true"></span></button>
-    </div>
-</form>
-<button type="button" id="headerSearchClose" class="btn-close" aria-label="{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xlf:page.dismiss')}"></button>
+<div class="global-search">
+    <form class="page-searchform">
+        <div class="input-group">
+            <input id="headerSearch" class="form-control" type="search" placeholder="{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xlf:page.search')}" aria-label="{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xlf:page.search-label')}" autocomplete="off">
+            <button class="btn btn-outline-secondary" type="submit" id="headerSearchBtn" aria-label="{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xlf:page.search-btn')}"><span class="bi bi-search" aria-hidden="true"></span></button>
+        </div>
+    </form>
+    <button type="button" id="headerSearchClose" class="btn btn-outline-secondary btn-searchoverlay-close" aria-label="{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xlf:page.dismiss')}"><span class="bi bi-x-lg" aria-hidden="true"></span></button>
+</div>
+<button type="button" id="headerSearchOpen" class="btn btn-outline-secondary btn-searchoverlay-open" aria-label="{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xlf:page.open')}"><span class="bi bi-search" aria-hidden="true"></span></button>
+
 </html>

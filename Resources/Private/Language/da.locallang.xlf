@@ -24,11 +24,14 @@
         <trans-unit id="page.search">
             <source>Søg...</source>
         </trans-unit>
-        <trans-unit id="page.search-dismiss">
-            <source>Luk søgefelt</source>
-        </trans-unit>
         <trans-unit id="page.search-btn">
             <source>Søgeknap</source>
+        </trans-unit>
+         <trans-unit id="page.search-open">
+            <source>Åbn søgefelt</source>
+        </trans-unit>
+        <trans-unit id="page.search-dismiss">
+            <source>Luk søgefelt</source>
         </trans-unit>
         <trans-unit id="page.global-menu">
             <source>Global navigation</source>
