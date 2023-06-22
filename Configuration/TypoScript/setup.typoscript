@@ -1,6 +1,7 @@
 # HELPER
 @import 'EXT:ucph_base_config/Configuration/TypoScript/Helper/PageClass.typoscript'
 @import 'EXT:ucph_base_config/Configuration/TypoScript/Helper/EmergencyBanner.typoscript'
+@import 'EXT:ucph_base_config/Configuration/TypoScript/Helper/DynamicContent.typoscript'
 
 ##############
 #### PAGE ####
