@@ -1,5 +1,5 @@
 {
-    "name": "university-of-copenhagen/ucph_base_config",
+    "name": "university-of-copenhagen/ucph-base-config",
     "type": "typo3-cms-extension",
     "description": "UCPH base TYPO3 configuration and layouts",
     "authors": [{
@@ -10,7 +10,6 @@
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "require": {
-        "university-of-copenhagen/ucph-assets": "*"
     },
     "autoload": {
         "psr-4": {
