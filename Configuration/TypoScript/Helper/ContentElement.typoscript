@@ -1,20 +1,16 @@
-
- CONTENT ELEMENT SETTINGS
+# CONTENT ELEMENT SETTINGS
 # Shared settings for TYPO3 content elements
 lib.contentElement = FLUIDTEMPLATE
 lib.contentElement {
     templateName = Default
     templateRootPaths {
         0 = EXT:ucph_base_config/Resources/Private/Templates/ContentElements/
-        10 = {$ucph_base_config_contentelements.view.templateRootPath}
     }
     partialRootPaths {
         0 = EXT:ucph_base_config/Resources/Private/Partials/ContentElements/
-        10 = {$ucph_base_config_contentelements.view.partialRootPath}
     }
     layoutRootPaths {
         0 = EXT:ucph_base_config/Resources/Private/Layouts/ContentElements/
-        10 = {$ucph_base_config_contentelements.view.layoutRootPath}
     }
 
     variables {
