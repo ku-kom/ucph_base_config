@@ -36,6 +36,12 @@
         <trans-unit id="page.global-menu">
             <source>Global menu</source>
         </trans-unit>
+        <trans-unit id="page.last-modified">
+            <source>Modified</source>
+        </trans-unit>
+        <trans-unit id="page.dateformat">
+            <source>%m %d %Y</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

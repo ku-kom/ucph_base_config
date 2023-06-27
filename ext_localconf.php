@@ -24,3 +24,6 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
     'loginHighlightColor' => '#901a1e',
     'loginFootnote' => 'University of Copenhagen CMS'
 ];
+
+// Hook to add timestamp when page or its content is edited
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][] = 'UniversityOfCopenhagen\\UcphBaseConfig\\Hooks\\LatestPageUpdates';
