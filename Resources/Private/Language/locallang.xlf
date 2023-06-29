@@ -42,6 +42,9 @@
         <trans-unit id="page.dateformat">
             <source>%m %d %Y</source>
         </trans-unit>
+        <trans-unit id="mobile-menu-toggle">
+            <source>Open sub menu item</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

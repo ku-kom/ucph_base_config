@@ -18,6 +18,17 @@ page {
         file = EXT:ucph_base_config/Resources/Public/Icons/favicon.ico
     }
 
+    settings {
+        # cat=UCPH TYPO3 base configuration: Menus/115/103; type=string; label=Page ids for global menu pages (comma separated).
+        globalMenu {
+            id =
+        }
+        # cat=UCPH TYPO3 base configuration: Menus/115/105; type=string; label=Page id in global menu to which a subsite or page is relative to.
+        globalMenu {
+            relation =
+        }
+    }
+
     meta {
         # cat=UCPH TYPO3 base configuration: meta data/120/100; type=string; label=viewport
         viewport = width=device-width, initial-scale=1, minimum-scale=1
