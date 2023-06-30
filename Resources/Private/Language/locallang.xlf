@@ -43,7 +43,7 @@
             <source>%m %d %Y</source>
         </trans-unit>
         <trans-unit id="mobile-menu-toggle">
-            <source>Open sub menu item</source>
+            <source>Toggle navigation</source>
         </trans-unit>
         </body>
     </file>
