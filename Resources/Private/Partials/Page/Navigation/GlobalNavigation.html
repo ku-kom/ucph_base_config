@@ -1,24 +1,18 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-
 <f:variable name="globalMenuItemRelation">{settings.globalMenu.relation}</f:variable>
-
-    <f:if condition="{globalnavigation}">
-        <f:render section="GlobalMenu" arguments="{_all}" />
-    </f:if>
-
-
+<f:if condition="{globalnavigation}">
+    <f:render section="GlobalMenu" arguments="{_all}" />
+</f:if>
 <f:section name="GlobalMenu">
     <f:if condition="{globalnavigation}">
         <nav class="navbar navbar-expand-lg" aria-label="{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xml:page.global-menu')}">
-        <ul class="navbar-nav globalmenu">
-            <f:for each="{globalnavigation}" as="item">
-                <li class="nav-item{f:if(condition: item.active, then:' active')}{f:if(condition: item.children, then:' has-children')} {f:if(condition: '{globalMenuItemRelation} == {item.data.uid}', then: 'active')}">
-                    <a href="{item.link}" class="nav-link{f:if(condition: item.children, then:' has-child')}" {f:if(condition: item.target, then: ' target="{item.target}"' )} {f:if(condition: item.current, then: ' aria-current="page"' )} {f:if(condition: item.data.nav_title, then: ' aria-label="{item.data.nav_title}"' )}>
-                        <span class="nav-link-text">{item.title}
-                    </a>
-                </li>
-            </f:for>
-        </ul>
+            <ul class="navbar-nav globalmenu">
+                <f:for each="{globalnavigation}" as="item">
+                    <li class="nav-item">
+                        <a href="{item.link}" class="nav-link{f:if(condition: '{item.active} || {globalMenuItemRelation} == {item.data.uid}', then:' active')}" {f:if(condition: item.target, then: ' target="{item.target}"' )} {f:if(condition: item.current, then: ' aria-current="page"' )} {f:if(condition: item.data.nav_title, then: ' aria-label="{item.data.nav_title}"' )}>{item.title}</a>
+                    </li>
+                </f:for>
+            </ul>
         </nav>
     </f:if>
 </f:section>
