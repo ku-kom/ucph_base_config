@@ -1,0 +1,7 @@
+# Order the tabs in the Content Element Wizard
+
+# mod.wizards.newContentElement.wizardItems.plugins.after = common,special
+mod.wizards.newContentElement.wizardItems.common.before = interactive
+mod.wizards.newContentElement.wizardItems.text.after = common
+mod.wizards.newContentElement.wizardItems.image.after = text
+mod.wizards.newContentElement.wizardItems.container.after = image
