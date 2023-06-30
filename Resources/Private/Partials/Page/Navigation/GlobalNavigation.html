@@ -16,25 +16,6 @@
                     <a href="{item.link}" class="nav-link{f:if(condition: item.children, then:' has-child')}" {f:if(condition: item.target, then: ' target="{item.target}"' )} {f:if(condition: item.current, then: ' aria-current="page"' )} {f:if(condition: item.data.nav_title, then: ' aria-label="{item.data.nav_title}"' )}>
                         <span class="nav-link-text">{item.title}
                     </a>
-                    <f:if condition="{item.children}">
-                        <f:then>
-                            <button type="button" class="menu_arrow" aria-controls="item-{item.data.uid}" {f:if(condition: item.children, then:' aria-haspopup="true"')} 	
-                                {f:if(condition: item.active, then:' aria-expanded="true"', else:' aria-expanded="false"')}>
-                                    <span class="visually-hidden">{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xml:mobile-menu-toggle')}/span> </button> 
-                                </f:then>
-                    </f:if> 
-                    <f:if condition="{item.children}">
-                                <ul class="level-2{f:if(condition: item.children, then:' has-children')}" id="item-{item.data.uid}">
-                                    <f:for each="{item.children}" as="child">
-                                        <li class="{f:if(condition: child.active, then:' active')}">
-                                            <a href="{child.link}" class="menu-link{f:if(condition: child.children, then:' has-child')}{f:if(condition: child.active, then:' active')}" {f:if(condition: child.target, then: ' target="{child.target}"' )} {f:if(condition: child.current, then: ' aria-current="page"' )} {f:if(condition: child.data.nav_title, then: ' aria-label="{child.data.nav_title}"' )}>
-                                                <span class="item-text">{child.title}<f:if condition="{child.current}">
-                                                        <span class="visually-hidden">(current)</span></f:if></span>
-                                            </a>
-                                        </li>
-                                    </f:for>
-                                </ul>
-                    </f:if>
                 </li>
             </f:for>
         </ul>
