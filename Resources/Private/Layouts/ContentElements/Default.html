@@ -1,5 +1,25 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <div class="container{f:if(condition: '{data.full_site_width} == 1', then: '-fluid')}">
+    <f:comment>
+        <f:if condition="{full_site_width} == 1">
+            <f:then>
+                <div class="container">
+                    <f:render section="Container" arguments="{_all}" />
+                </div>
+            </f:then>
+            <f:else>
+                <f:render section="Container" arguments="{_all}" />
+            </f:else>
+        </f:if>
+
+        <f:section name="Container">
+            <div class="row">
+                <div class="col">
+                    <f:render section="Main" optional="true" />
+                </div>
+            </div>
+        </f:section>
+    </f:comment>
     <div class="row">
         <div class="col">
             <f:render section="Main" optional="true" />
