@@ -12,9 +12,6 @@
         <trans-unit id="backend_layout.one_column_noleftmenu">
             <source>One column - no left menu</source>
         </trans-unit>
-        <trans-unit id="tt_content.full_site_width.title">
-            <source>Show in full site width</source>
-        </trans-unit>
         <trans-unit id="container.container_1_columns.name">
             <source>1 Column</source>
         </trans-unit>
