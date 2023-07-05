@@ -133,3 +133,7 @@ button[name="_saveandclosedok"] {
     border: 1px solid #dc3545;
     box-shadow: inset 1px 1px 4px #555;
 }
+
+.icon-list .item img {
+    width: 100%;
+}
