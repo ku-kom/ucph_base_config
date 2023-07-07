@@ -45,6 +45,12 @@
         <trans-unit id="mobile-menu-toggle">
             <source>Åbn globalmenu</source>
         </trans-unit>
+        <trans-unit id="page.open">
+            <source>Åbn søgefelt</source>
+        </trans-unit>
+        <trans-unit id="page.dismiss">
+            <source>Luk søgefelt</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

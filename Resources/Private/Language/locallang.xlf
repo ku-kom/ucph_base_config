@@ -45,6 +45,12 @@
         <trans-unit id="mobile-menu-toggle">
             <source>Toggle navigation</source>
         </trans-unit>
+        <trans-unit id="page.open">
+            <source>Open search bar</source>
+        </trans-unit>
+        <trans-unit id="page.dismiss">
+            <source>Close search bar</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>
