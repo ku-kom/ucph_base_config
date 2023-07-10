@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{subnavigation}">
+    <nav aria-label="{f:translate(key: 'LLL:EXT:ucph_base_config/Resources/Private/Language/locallang.xml:page.leftmenu')}">
+        <h2 class="nav-title"><f:link.page pageUid="{rootPage}" class="nav-title-link" additionalAttributes="{aria-label:'{data.nav_title}'}">{siteTitle}</f:link.page></h2>
+        <f:render section="SubnavigationItem" arguments="{menu: subnavigation}" />
+    </nav>
+</f:if>
+<f:section name="SubnavigationItem">
+    <f:if condition="{menu}">
+        <ul class="subnav-nav">
+            <f:for each="{menu}" as="item">
+                <li class="subnav-item{f:if(condition: item.active, then:' active')}">
+                    <a href="{item.link}" id="subnav-item-{item.data.uid}" class="subnav-link{f:if(condition: item.current, then: ' current' )}" {f:if(condition: '{item.target}' , then: ' target="{item.target}"' )}{f:if(condition: '{item.target} == "_blank"' , then: ' rel="noopener noreferrer"' )} {f:if(condition: item.data.nav_title, then: ' aria-label="{item.data.nav_title}"' )} {f:if(condition: item.current, then: ' aria-current="page"' )}>
+                        <span class="subnav-link-text">{item.title}</span>
+                    </a>
+                    <f:if condition="{item.children}">
+                        <f:render section="SubnavigationItem" arguments="{menu: item.children}" />
+                    </f:if>
+                </li>
+            </f:for>
+        </ul>
+    </f:if>
+</f:section>
+
+</html>
