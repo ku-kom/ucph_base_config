@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+    <f:if condition="{pageTitle}">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="page-title">{pageTitle}</h1>
+                </div>
+            </div>
+        </div>
+    </f:if>
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '20'}" />
+</f:section>
+
+</html>
