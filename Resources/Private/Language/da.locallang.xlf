@@ -54,6 +54,9 @@
         <trans-unit id="page.leftmenu">
             <source>Venstremenu</source>
         </trans-unit>
+        <trans-unit id="page.breadcrumb">
+            <source>Brødkrumme</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

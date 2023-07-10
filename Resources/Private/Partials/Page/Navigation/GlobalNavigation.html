@@ -16,7 +16,7 @@
                     <ul class="navbar-nav globalmenu">
                         <f:for each="{globalnavigation}" as="item">
                             <li class="nav-item">
-                                <a href="{item.link}" class="nav-link{f:if(condition: '{item.active} || {globalMenuItemRelation} == {item.data.uid}', then:' active')}" {f:if(condition: item.target, then: ' target="{item.target}"' )} {f:if(condition: item.current, then: ' aria-current="page"' )} {f:if(condition: item.data.nav_title, then: ' aria-label="{item.data.nav_title}"' )}>{item.title}</a>
+                                <a href="{item.link}" class="nav-link{f:if(condition: '{item.active} || {globalMenuItemRelation} == {item.data.uid}', then:' active')}" {f:if(condition: item.target, then: ' target="{item.target}"' )} {f:if(condition: item.active, then: ' aria-current="page"' )} {f:if(condition: item.data.nav_title, then: ' aria-label="{item.data.nav_title}"' )}>{item.title}</a>
                             </li>
                         </f:for>
                     </ul>

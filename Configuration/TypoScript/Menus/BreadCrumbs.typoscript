@@ -1,0 +1,14 @@
+# Breadcrumbs
+page {
+    10 {
+        dataProcessing {
+            50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            50 {
+                special = rootline
+                special.range = 0|-1
+                includeNotInMenu = 1
+                as = breadcrumbs
+            }
+        }
+    }
+}

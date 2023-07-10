@@ -2,8 +2,8 @@
 page {
     10 {
         dataProcessing {
-            70 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-            70 {
+            30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            30 {
                 special = list
                 special.value = {$page.settings.globalMenu.id}
                 levels = 1
