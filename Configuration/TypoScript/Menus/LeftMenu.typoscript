@@ -1,0 +1,17 @@
+# Left menu
+page {
+    10 {
+        dataProcessing {
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+                entryLevel = 0
+                levels = 4
+                excludeDoktypes = 6
+                expandAll = 0
+                includeSpacer = 0
+                titleField = nav_title // title
+                as = subnavigation
+            }
+        }
+    }
+}
