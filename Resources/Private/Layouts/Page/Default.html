@@ -6,9 +6,11 @@
     </header>
     <div class="pageheader-spacer"></div>
     <div id="page-content" class="main-section">
-        <!--TYPO3SEARCH_begin-->
-        <f:render section="Main" />
-        <!--TYPO3SEARCH_end-->
+        <div class="row mx-0">
+            <!--TYPO3SEARCH_begin-->
+            <f:render section="Main" />
+            <!--TYPO3SEARCH_end-->
+        </div>
     </div>
     <footer id="page-footer" class="footer-section">
         <f:render partial="Navigation/LocalFooter" arguments="{_all}" />
