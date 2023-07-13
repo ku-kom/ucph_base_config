@@ -10,6 +10,7 @@
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "require": {
+        "b13/picture": "dev-master"
     },
     "autoload": {
         "psr-4": {

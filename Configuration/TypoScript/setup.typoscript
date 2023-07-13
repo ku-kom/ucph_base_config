@@ -5,6 +5,8 @@
 # HELPER
 @import 'EXT:ucph_base_config/Configuration/TypoScript/Helper/PageClass.typoscript'
 @import 'EXT:ucph_base_config/Configuration/TypoScript/Helper/DynamicContent.typoscript'
+# B13/Picture image viewhelper
+@import 'EXT:picture/Configuration/TypoScript/setup.typoscript'
 
 ##############
 #### PAGE ####
