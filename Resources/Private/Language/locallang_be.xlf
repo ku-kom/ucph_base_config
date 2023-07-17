@@ -75,15 +75,6 @@
         <trans-unit id="ratio.free">
             <source>Free</source>
         </trans-unit>
-        <trans-unit id="imgsize-desktop">
-            <source>Desktop</source>
-        </trans-unit>
-        <trans-unit id="imgsize-tablet">
-            <source>Tablet</source>
-        </trans-unit>
-        <trans-unit id="imgsize-mobile">
-            <source>Mobile</source>
-        </trans-unit>
         </body>
     </file>
 </xliff>
