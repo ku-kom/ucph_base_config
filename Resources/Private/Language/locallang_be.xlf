@@ -45,6 +45,45 @@
         <trans-unit id="container.column.middle_right">
             <source>Middle Right</source>
         </trans-unit>
+        <trans-unit id="option.extrasmall">
+            <source>Extra Small</source>
+        </trans-unit>
+        <trans-unit id="option.small">
+            <source>Small</source>
+        </trans-unit>
+        <trans-unit id="option.medium">
+            <source>Medium</source>
+        </trans-unit>
+        <trans-unit id="option.xlarge">
+            <source>Extra Large</source>
+        </trans-unit>
+        <trans-unit id="option.large">
+            <source>Large</source>
+        </trans-unit>
+        <trans-unit id="option.default">
+            <source>Default</source>
+        </trans-unit>
+        <trans-unit id="ratio.16_9">
+            <source>16:9</source>
+        </trans-unit>
+        <trans-unit id="ratio.4_3">
+            <source>4:3</source>
+        </trans-unit>
+        <trans-unit id="ratio.1_1">
+            <source>1:1</source>
+        </trans-unit>
+        <trans-unit id="ratio.free">
+            <source>Free</source>
+        </trans-unit>
+        <trans-unit id="imgsize-desktop">
+            <source>Desktop</source>
+        </trans-unit>
+        <trans-unit id="imgsize-tablet">
+            <source>Tablet</source>
+        </trans-unit>
+        <trans-unit id="imgsize-mobile">
+            <source>Mobile</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>
