@@ -233,7 +233,7 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['crop']['config']['cropVariants
                 ]
             ],
         ],
-        'extrasmall' => [
+        'xsmall' => [
             'title' => 'LLL:EXT:'. $ext .'/Resources/Private/Language/locallang_be.xlf:option.extrasmall',
             'allowedAspectRatios' => [
                 '16:9' => [

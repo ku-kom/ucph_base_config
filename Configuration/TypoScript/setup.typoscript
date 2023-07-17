@@ -8,6 +8,16 @@
 # B13/Picture image viewhelper
 @import 'EXT:picture/Configuration/TypoScript/setup.typoscript'
 
+plugin.tx_picture {
+  breakpoints {
+    xs = 567
+    sm = 768
+    md = 992
+    lg = 1200
+    xl = 1400
+  }
+}
+
 ##############
 #### PAGE ####
 ##############
