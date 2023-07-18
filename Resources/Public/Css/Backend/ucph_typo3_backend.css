@@ -136,4 +136,5 @@ button[name="_saveandclosedok"] {
 
 .icon-list .item img {
     width: 100%;
+    min-width: 128px;
 }
