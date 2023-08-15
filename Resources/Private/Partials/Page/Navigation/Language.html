@@ -2,12 +2,13 @@
 <f:if condition="{languagenavigation}">
     <ul class="lang">
         <f:for each="{languagenavigation}" as="item">
-            <f:debug>{_all}</f:debug>
             <f:if condition="{item.active} == 0">
                 <f:then>
                     <li>
                         <a href="{item.link}" hreflang="{item.hreflang}" class="nav-link" {f:if(condition: item.data.subtitle, then: ' aria-label="{item.data.subtitle}"' )}>
-                            <soan><f:format.case mode="upper">{item.twoLetterIsoCode}</f:format.case></soan>
+                            <soan>
+                                <f:format.case mode="upper">{item.twoLetterIsoCode}</f:format.case>
+                            </soan>
                             <span class="visually-hidden">{item.navigationTitle}</span>
                         </a>
                     </li>
