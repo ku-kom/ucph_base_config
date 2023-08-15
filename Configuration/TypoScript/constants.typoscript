@@ -22,6 +22,14 @@ page {
         globalMenu {
             relation =
         }
+        # cat=UCPH TYPO3 base configuration: Menus/115/106; type=string; label=Folder id for folder containing pages to be used as utility links.
+        utilityMenu {
+            id =
+        }
+        # cat=UCPH TYPO3 base configuration: Menus/115/107; type=string; label=Language Navigation Values: Comma separated list of language uids or set to 'auto' to load all enabled system languages
+        language {
+            languageValue = auto
+        }
     }
 
     meta {

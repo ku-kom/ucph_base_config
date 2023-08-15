@@ -1,0 +1,12 @@
+# Utility menu based on pages in a folder
+page {
+    10 {
+        dataProcessing {
+            40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+            40 {
+                languages = {$page.language.languageValue}
+                as = languagenavigation
+            }
+        }
+    }
+}
