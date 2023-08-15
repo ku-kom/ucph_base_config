@@ -5,7 +5,7 @@
             <f:if condition="{item.active} == 0">
                 <f:then>
                     <li>
-                        <a href="{item.link}" hreflang="{item.hreflang}" class="nav-link" {f:if(condition: item.data.subtitle, then: ' aria-label="{item.data.subtitle}"' )}>
+                        <a href="{item.link}" hreflang="{item.hreflang}" class="btn btn-outline-secondary" {f:if(condition: item.data.subtitle, then: ' aria-label="{item.data.subtitle}"' )}>
                             <soan>
                                 <f:format.case mode="upper">{item.twoLetterIsoCode}</f:format.case>
                             </soan>
