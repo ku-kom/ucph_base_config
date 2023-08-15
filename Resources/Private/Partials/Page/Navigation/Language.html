@@ -1,19 +1,20 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:if condition="{languagenavigation}">
-    <f:for each="{languagenavigation}" as="item">
-        <f:if condition="{item.active} == 0">
-            <f:then>
-                <li class="lang">
-                    <a href="{item.link}" hreflang="{item.hreflang}" class="nav-link" {f:if(condition: item.data.subtitle, then: ' aria-label="{item.data.subtitle}"' )}>
-                        <span aria-hidden="true">
-                            <core:icon identifier="{item.flag}" size="small" />
-                        </span>
-                        <span>{item.navigationTitle}</span>
-                    </a>
-                </li>
-            </f:then>
-        </f:if>
-    </f:for>
+    <ul class="lang">
+        <f:for each="{languagenavigation}" as="item">
+            <f:debug>{_all}</f:debug>
+            <f:if condition="{item.active} == 0">
+                <f:then>
+                    <li>
+                        <a href="{item.link}" hreflang="{item.hreflang}" class="nav-link" {f:if(condition: item.data.subtitle, then: ' aria-label="{item.data.subtitle}"' )}>
+                            <soan><f:format.case mode="upper">{item.twoLetterIsoCode}</f:format.case></soan>
+                            <span class="visually-hidden">{item.navigationTitle}</span>
+                        </a>
+                    </li>
+                </f:then>
+            </f:if>
+        </f:for>
+    </ul>
 </f:if>
 
 </html>
