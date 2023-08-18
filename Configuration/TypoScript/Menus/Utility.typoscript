@@ -1,0 +1,20 @@
+# Utility menu based on pages in a folder
+page {
+    10 {
+        dataProcessing {
+            80 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            80 {
+                special = directory
+                special.value = {$page.settings.utilityMenu.id}
+                levels = 1
+                expandAll = 1
+                includeSpacer = 0
+                titleField = nav_title // title
+                as = utilitymenu
+                if {
+                    isTrue = {$page.settings.utilityMenu.id}
+                }
+            }
+        }
+    }
+}
