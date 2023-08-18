@@ -39,7 +39,7 @@ page {
     
     bootstrap {
         # cat=UCPH TYPO3 base configuration: assets/130/100; type=string; label=Bootstrap CSS
-        css = EXT:ucph_assets/Resources/Public/Css/Dist/bootstrap.min.css
+        css = EXT:ucph_assets/Resources/Public/Css/Dist/bootstrap.css
         # cat=UCPH TYPO3 base configuration: assets/130/110; type=string; label=Bootstrap js
         js = EXT:ucph_assets/Resources/Public/JavaScript/Dist/bootstrap.bundle.min.js
         # cat=UCPH TYPO3 base configuration: assets/130/115; type=string; label=UCPH global js
