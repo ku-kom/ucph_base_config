@@ -4,7 +4,7 @@ page {
         dataProcessing {
             40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
             40 {
-                languages = {$page.language.languageValue}
+                languages = {$page.settings.language.languageValue}
                 as = languagenavigation
             }
         }
