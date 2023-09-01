@@ -60,6 +60,8 @@ page {
         variables {
             pageTitle = TEXT
             pageTitle.data = page:title
+            twoLetterIsoCode = TEXT
+            twoLetterIsoCode.data = siteLanguage:iso-639-1
             siteTitle = TEXT
             siteTitle.data = siteLanguage:websiteTitle//site:websiteTitle//site:identifier
             rootPage = TEXT
