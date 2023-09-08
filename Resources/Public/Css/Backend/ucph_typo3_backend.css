@@ -138,3 +138,32 @@ button[name="_saveandclosedok"] {
     width: 100%;
     min-width: 128px;
 }
+
+select[name*="tx_ucph_content_bg_color"] option[value="subset-color-1"] {
+    background: rgba(184, 215, 222, 1);
+}
+
+select[name*="tx_ucph_content_bg_color"] option[value="subset-color-2"] {
+    background: rgba(217, 62, 38, 1);
+    color: #fff;
+}
+
+select[name*="tx_ucph_content_bg_color"] option[value="subset-color-3"] {
+    background: rgba(226, 224, 223, 1);
+}
+
+
+select[name*="tx_ucph_content_bg_color"] option[value="subset-color-4"] {
+    background: rgba(61, 61, 62, 1);
+    color: #fff;
+}
+
+select[name*="tx_ucph_content_bg_color"] option[value="subset-color-5"] {
+    background: rgba(145, 29, 32, 1);
+    color: #fff;
+}
+
+select[name*="tx_ucph_content_bg_color"] option[value="subset-color-6"] {
+    background: rgba(102, 102, 103, 1);
+    color: #fff;
+}
