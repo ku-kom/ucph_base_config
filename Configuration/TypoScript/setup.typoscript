@@ -64,6 +64,8 @@ page {
             twoLetterIsoCode.data = siteLanguage:iso-639-1
             siteTitle = TEXT
             siteTitle.data = siteLanguage:websiteTitle//site:websiteTitle//site:identifier
+            isSiteRoot = TEXT
+            isSiteRoot.data = page:is_siteroot
             rootPage = TEXT
             rootPage.data = leveluid:0
             pagelayout = TEXT
