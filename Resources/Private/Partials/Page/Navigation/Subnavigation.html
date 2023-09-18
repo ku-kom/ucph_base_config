@@ -7,11 +7,11 @@
 </f:if>
 <f:section name="SubnavigationItem">
     <f:if condition="{menu}">
-        <ul class="subnav-nav">
+        <ul class="navbar-nav">
             <f:for each="{menu}" as="item">
-                <li class="subnav-item{f:if(condition: item.active, then:' active')}">
-                    <a href="{item.link}" id="subnav-item-{item.data.uid}" class="subnav-link{f:if(condition: item.current, then: ' current' )}" {f:if(condition: '{item.target}' , then: ' target="{item.target}"' )}{f:if(condition: '{item.target} == "_blank"' , then: ' rel="noopener noreferrer"' )} {f:if(condition: item.data.nav_title, then: ' aria-label="{item.data.nav_title}"' )} {f:if(condition: item.current, then: ' aria-current="page"' )}>
-                        <span class="subnav-link-text">{item.title}</span>
+                <li class="nav-item{f:if(condition: item.active, then:' active')}">
+                    <a href="{item.link}" id="nav-item-{item.data.uid}" class="nav-link{f:if(condition: item.active, then:' active')}" {f:if(condition: '{item.target}' , then: ' target="{item.target}"' )}{f:if(condition: '{item.target} == "_blank"' , then: ' rel="noopener noreferrer"' )} {f:if(condition: item.data.nav_title, then: ' aria-label="{item.data.nav_title}"' )} {f:if(condition: item.current, then: ' aria-current="page"' )}>
+                        <span class="nav-link-text">{item.title}</span>
                     </a>
                     <f:if condition="{item.children}">
                         <f:render section="SubnavigationItem" arguments="{menu: item.children}" />
