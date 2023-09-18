@@ -139,7 +139,7 @@ button[name="_saveandclosedok"] {
     min-width: 128px;
 }
 
-select[name*="tx_ucph_content_bg_color"] option[value="subset-color-1"] {
+/* select[name*="tx_ucph_content_bg_color"] option[value="subset-color-1"] {
     background: rgba(184, 215, 222, 1);
 }
 
@@ -166,4 +166,4 @@ select[name*="tx_ucph_content_bg_color"] option[value="subset-color-5"] {
 select[name*="tx_ucph_content_bg_color"] option[value="subset-color-6"] {
     background: rgba(102, 102, 103, 1);
     color: #fff;
-}
+} */
